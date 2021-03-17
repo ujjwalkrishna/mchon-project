@@ -1,29 +1,21 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+// import { Link } from "gatsby"
+// import { StaticImage } from "gatsby-plugin-image"
+import logo from "../images/m_logofixed.png"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <StaticImage
-      src="../images/gatsby-astronaut.png"
-      width={300}
-      quality={95}
-      formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
-    />
-    <p>
-      <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-    </p>
-  </Layout>
-)
+// import React from "react"
 
-export default IndexPage
+export default function Home() {
+  return (
+    <div className="cont">
+    <div className="overlay">
+
+    <div className="logo-image"> <img src={logo} /> </div>
+    <h1 className="center-text"> Under Maintenance </h1>
+    <p className="colour-text"> Meanwhile, you can take a look at the rest of my work <span className="linkBlue"> <a href="http://www.behance.net/mchonjb" target="_blank"> here, at behance.net/mchonjb </a> </span></p>
+
+    </div>
+    </div>
+  );
+}
